@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umaimah Arif | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</head>
+<body>
+
+
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">UA</div>
+
+  <!-- Hamburger (only visible on mobile) -->
+  <div class="hamburger" id="hamburger">&#9776;</div>
+
+  <!-- Nav Links (used for both desktop and mobile) -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="close-btn" id="closeBtn">&times;</li> <!-- only visible on mobile -->
+  </ul>
+</nav>
+
+ <!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-wrapper">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Umaimah</span></h1>
+      <h2><span id="typing"></span></h2>
+      <p>I craft clean, creative, and responsive user interfaces using modern web technologies.</p>
+      <a href="#projects" class="btn">See My Projects</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero.jpeg" alt="Umaimah illustration" class="zoom-bounce" />
+    </div>
+  </div>
+  <!-- Background Shape -->
+  <div class="hero-blob"></div>
+</section>
+
+
+  <!-- About Section -->
+<section class="about reveal" id="about">
+  <div class="about-container">
+
+
+<!-- Floating Tech Icons -->
+<div class="floating-icons">
+  <img src="assets/js.png" alt="js" class="float-icon js">
+  <img src="assets/html.png" alt="HTML" class="float-icon html">
+  <img src="assets/css.png" alt="CSS" class="float-icon css">
+  <img src="assets/next.png" alt="next" class="float-icon react">
+  </div>
+
+
+    <!-- Left: Text -->
+    <div class="about-text">
+      <h2>Who am I?</h2>
+      <p>
+        I'm Umaimah, a frontend developer who loves turning ideas into real, interactive, and beautiful websites.
+      </p>
+      <p>
+        With a strong focus on clean code, responsive design, and modern UI trends, I build digital experiences that are both elegant and functional.
+      </p>
+      <p>It all began with a schoolgirl’s curiosity — wondering how websites appeared on her mobile screen. That simple question sparked something deep, and over time, that curiosity turned into passion. What started as fascination soon became purpose. Today, I build the kind of websites I used to be amazed by — thoughtful, responsive, and crafted with care.</p>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="about-image">
+      <img src="assets/about.jpeg" alt="Umaimah " class="zoom-bounce"/>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section class="projects reveal" id="projects">
+   <canvas id="binaryCanvas"></canvas> <!-- falling binary effect -->
+
+  <h2>My Projects</h2>
+  <div class="projects-wrapper">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="assets/project1.PNG" alt="Project 1" />
+            <h3>UFO Burger</h3>
+            <p>Developed for a restaurant in Brazil.</p>
+            <div class="project-links">
+              <a href="https://ufoburgermcp.com/">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="assets/project2.PNG" alt="Project 2" />
+            <h3>GreenLense</h3>
+            <p>A web experience that showcases the beauty of photographs.</p>
+            <div class="project-links">
+              <a href="https://greenlense.netlify.app/">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="assets/project3.PNG" alt="Project 3" />
+            <h3>Bloom and Bliss</h3>
+            <p>A florist website.</p>
+            <div class="project-links">
+              <a href="https://bloom-andbliss.netlify.app/">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <!-- <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300x180?text=Project+4" alt="Project 4" />
+            <h3>Project Four</h3>
+            <p>Short description of the project.</p>
+            <div class="project-links">
+              <a href="#">Live Demo</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Slide 5 -->
+        <!-- <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/300x180?text=Project+5" alt="Project 5" />
+            <h3>Project Five</h3>
+            <p>Short description of the project.</p>
+            <div class="project-links">
+              <a href="#">Live Demo</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section class="skills reveal" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+
+    <div class="skill-bubble">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+    </div>
+
+    <div class="skill-bubble">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+    </div>
+
+    <div class="skill-bubble">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+    </div>
+
+    <div class="skill-bubble">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+    </div>
+    
+    <div class="skill-bubble">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+    </div>
+
+<!-- Next.js -->
+<div class="skill-bubble">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
+</div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials reveal" id="testimonials">
+  <h2>What People Say</h2>
+  <div class="testimonial-container">
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <p>“Working with Umaimah was a fantastic experience. She understood exactly what we needed and delivered with great design and code.”</p>
+      <h4>Sarah M. <span>– Designer</span></h4>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <p>“Very professional and detail-oriented! The project exceeded our expectations. Highly recommend her for any frontend work.”</p>
+      <h4>Ali K. <span>– Client</span></h4>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <p>“She turned our vision into a beautiful website. Her creativity and communication were top-notch throughout.”</p>
+      <h4>Emma R. <span>– Startup Founder</span></h4>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section class="contact reveal" id="contact">
+  <h2>Contact Me</h2>
+  <p class="contact-intro">Have a project in mind or just want to say hi? Fill out the form below!</p>
+  
+ <form class="contact-form zoom-bounce" name="contact" method="POST" netlify>
+  <!-- Netlify Hidden Input -->
+  <input type="hidden" name="form-name" value="contact" />
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Umaimah. All rights reserved.</p>
+  </footer>
+
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- form success msg -->
+ <div id="success-popup" class="success-popup">Thanks! Your message has been sent.</div>
+
+
+ <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑ Back to top</button>
+
+</body>
+</html>
