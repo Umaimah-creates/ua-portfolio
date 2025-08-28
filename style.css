@@ -359,6 +359,12 @@ body {
 }
 
 /* project */
+
+.mySwiper .swiper-slide {
+  display: flex;
+  height: auto !important; /* ensures it doesn’t shrink unevenly */
+}
+
 .projects {
   background: #fff;
   padding: 80px 20px;
@@ -415,6 +421,7 @@ body {
   flex-direction: column;
   justify-content: space-between; /* 🔑 keep elements aligned */
   height: 100%;  /* 🔑 ensures equal height */
+  min-height: 400px;
   max-width: 300px;
   margin: auto;
   opacity: 0;
