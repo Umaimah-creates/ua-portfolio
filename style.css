@@ -413,7 +413,8 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between; /* 🔑 keep elements aligned */
+  height: 100%;  /* 🔑 ensures equal height */
   max-width: 300px;
   margin: auto;
   opacity: 0;
@@ -423,8 +424,9 @@ body {
 
 .project-card img {
   width: 100%;
-  height: 180px;
-  object-fit: contain;
+  height: 180px;   /* 🔑 fixed image height */
+  object-fit: cover; /* 🔑 fills card neatly */
+  border-bottom: 2px solid #902D43;
 }
 
 .project-card h3 {
@@ -437,11 +439,14 @@ body {
   font-size: 0.95rem;
   color: #333;
   padding: 0 1rem;
-  flex-grow: 1;
+  flex-grow: 1;   /* 🔑 ensures description takes leftover space */
+  display: flex;
+  align-items: flex-start;
 }
 
 .project-links {
-  margin: 1rem;
+    margin: 1rem;
+  margin-top: auto;
 }
 
 .project-links a {
